@@ -33,7 +33,7 @@ function Navbar() {
                   className="bg-transparent border-none outline-none px-2 text-sm w-full "
                 />
               </div>
-              {!showSearch && (
+              {showSearch && (
                 <div className="flex items-center justify-center py-2 px-2  bg-slate-100  border border-gray-300 rounded-3xl md:hidden absolute top-20 left-[12%] sm:left-[30%] opacity-100">
                   <CiSearch size={23} />
                   <input

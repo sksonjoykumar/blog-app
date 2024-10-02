@@ -4,16 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node --trace-deprecation ./node_modules/vite/bin/vite.js",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node --no-deprecation-warning ..."
   },
   "dependencies": {
     "axios": "^1.7.2",
     "firebase": "^10.14.0",
     "framer-motion": "^11.9.0",
     "prettier": "^3.3.2",
+    "punycode": "^2.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
